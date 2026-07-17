@@ -1,0 +1,16 @@
+{
+  "name": "Harsh Vishwakarma",
+  "location": "Noida, Uttar Pradesh, India",
+  "headline": "Python & Angular Full-Stack Developer",
+  "secondary_headline": "FastAPI, REST APIs, asynchronous backend systems and responsive Angular interfaces",
+  "availability": "Available for freelance projects",
+  "summary": "Software Engineer focused on building maintainable Python and FastAPI backends, responsive Angular experiences, and efficient REST APIs. I turn ambiguous requirements into clear architecture, measurable performance improvements, and dependable software through careful problem-solving.",
+  "links": {"github": "https://github.com/harsharma-0", "linkedin": "https://www.linkedin.com/in/harsh-vishwakarma-0a4482218", "leetcode": "https://leetcode.com/u/harsh6341/", "email": "mailto:harsharma109@gmail.com", "resume": "/assets/documents/Harsh_Vishwakarma_Resume.pdf"},
+  "metrics": [
+    {"label": "Professional experience", "value": "1+ year"},
+    {"label": "API latency improvement", "value": "60%+"},
+    {"label": "Coding problems solved", "value": "500+"},
+    {"label": "IEEE publications", "value": "2"},
+    {"label": "Production module", "value": "8 endpoints"}
+  ]
+}

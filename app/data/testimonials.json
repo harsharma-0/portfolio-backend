@@ -1,0 +1,7 @@
+{
+  "publication_note":"Sample testimonials only. Replace every entry with a verified client testimonial before publishing.",
+  "items":[
+    {"quote":"Sample: Harsh translated a complex API requirement into a clear, maintainable implementation.","author":"Sample client","context":"Backend development example","is_sample":true,"display_order":1},
+    {"quote":"Sample: Communication was structured, progress was visible, and the final dashboard felt polished.","author":"Sample collaborator","context":"Full-stack dashboard example","is_sample":true,"display_order":2}
+  ]
+}
