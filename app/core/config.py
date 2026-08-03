@@ -14,14 +14,9 @@ class Settings(BaseSettings):
     debug: bool = False
     api_prefix: str = "/api/v1"
     frontend_origins: str = "http://localhost:4200"
-    smtp_host: str = ""
-    smtp_port: int = 587
-    smtp_username: str = ""
-    smtp_password: str = ""
-    smtp_from_email: str = ""
-    smtp_from_name: str = "Harsh Portfolio"
+    resend_api_key: str = ""
+    email_from: str = ""
     contact_receiver_email: str = ""
-    smtp_use_tls: bool = True
     max_request_bytes: int = 1_000_000
 
     model_config = SettingsConfigDict(env_file=BASE_DIR / ".env", env_file_encoding="utf-8", extra="ignore")
@@ -40,8 +35,15 @@ class Settings(BaseSettings):
         return [origin.strip().rstrip("/") for origin in origins if origin.strip()]
 
     @property
-    def smtp_configured(self) -> bool:
-        return all((self.smtp_host, self.smtp_username, self.smtp_password, self.smtp_from_email, self.contact_receiver_email))
+    def email_configured(self) -> bool:
+        return all(
+            value.strip()
+            for value in (
+                self.resend_api_key,
+                self.email_from,
+                self.contact_receiver_email,
+            )
+        )
 
 
 @lru_cache

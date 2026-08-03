@@ -7,6 +7,14 @@ from fastapi.responses import JSONResponse
 logger = logging.getLogger(__name__)
 
 
+class EmailConfigurationError(RuntimeError):
+    """Raised when required email delivery settings are absent."""
+
+
+class EmailDeliveryError(RuntimeError):
+    """Raised when the email provider cannot deliver a message."""
+
+
 def register_exception_handlers(app: FastAPI) -> None:
     @app.exception_handler(RequestValidationError)
     async def validation_handler(_: Request, exc: RequestValidationError) -> JSONResponse:

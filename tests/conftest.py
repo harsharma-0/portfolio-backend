@@ -1,5 +1,5 @@
 import os
-os.environ.update({"APP_ENV": "test", "DEBUG": "false", "SMTP_HOST": "", "SMTP_USERNAME": "", "SMTP_PASSWORD": "", "SMTP_FROM_EMAIL": "", "CONTACT_RECEIVER_EMAIL": ""})
+os.environ.update({"APP_ENV": "test", "DEBUG": "false", "RESEND_API_KEY": "", "EMAIL_FROM": "", "CONTACT_RECEIVER_EMAIL": ""})
 
 import pytest
 from httpx import ASGITransport, AsyncClient
